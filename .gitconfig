@@ -1,0 +1,19 @@
+[user]
+name = foo
+email = foo@bar.com
+[color]
+ui = true
+[core]
+autocrlf = input
+safecrlf = true
+[alias]
+co = checkout
+ci = commit
+st = status
+br = branch
+fo = fetch origin
+pom = push origin main
+mom = merge origin/main
+hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+type = cat-file -t
+dump = cat-file -p
