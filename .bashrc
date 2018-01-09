@@ -11,7 +11,6 @@ export PS1='\u@\h:\[\033[34m\]$(parse_git_branch)\[\033[0m\]:\[\033[32m\]\w\[\03
 # set colored output for git diff
 export LESS="- M -I -r"
 
-
 # ri
 export RI="--format ansi --width 80"
 
@@ -19,4 +18,7 @@ alias gs='git status'
 alias gc='git commit'
 alias gh='git hist'
 
-alias review=$HOME/review.sh $1
+alias l='ls -al'
+alias ..='cd ..'
+
+export JAVA_TOOL_OPTIONS='-Djava.awt.headless=true'
