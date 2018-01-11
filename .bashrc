@@ -13,6 +13,9 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 # set colored output for git diff
 export LESS="- M -I -r"
 
+# set colors
+export CLICOLOR=1
+
 # ri
 export RI="--format ansi --width 80"
 
