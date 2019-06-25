@@ -16,4 +16,4 @@ set pastetoggle=<F2>
 set guifont=Menlo\ Regular:h14
 
 set background=dark
-colorscheme solarized
+" colorscheme solarized
