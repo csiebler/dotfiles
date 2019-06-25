@@ -6,7 +6,7 @@ function parse_git_branch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/ [\1$(parse_git_dirty)]/"
 }
 #export PS1='\[\e[34m\]\u\[\e[0m\]@\[\e[34m\]\h\[\e[0m\]\[\e[34m\]$(parse_git_branch)\[\e[0m\] \[\e[32m\]\w\[\e[0m\] $ '
-export PS1='⚡️ \[\e[34m\]\u\[\e[0m\]\[\e[36m\]$(parse_git_branch)\[\e[0m\] \[\e[32m\]\w\[\e[0m\] $ '
+export PS1='⚡️ \[\e[34m\]\u\[\e[0m\]\e[38m$(parse_git_branch)\e[0m \[\e[32m\]\w\[\e[0m\] $ '
 
 # config command for storing dotfiles
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
